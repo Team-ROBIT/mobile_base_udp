@@ -1,0 +1,4 @@
+<launch>
+  <rosparam command="load" file="$(find operator_udp)/config/oper_udp.yaml"/>
+  <node pkg="operator_udp" type="operator_udp" name="operator_udp" output="screen"/>
+</launch>

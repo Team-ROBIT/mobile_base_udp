@@ -1,8 +1,24 @@
-this_ip: "i192_168_199_253p12345"
+ip:
+  this:
+    ip: "192.168.199.253"
+    port: 12345
 
-dst_ip:
-  "i192_168_199_100p12345" : 0
+  robot:
+    ip: "192.168.199.100"
+    port: 12345
 
-image :
-  usb_cam : 100
-  abc : 200
+image_rcv:
+  main_cam:
+    data_num: 100
+    topic_name: "usb_cam/image_raw"
+
+STMtx_send:
+  STM_tx_data:
+    data_num: 0
+    dst_name: "robot"
+    topic_name: "STM_tx_data"
+
+STMrx_rcv:
+  STM_rx_data:
+    data_num: 0
+    topic_name: "STM_rx_data"

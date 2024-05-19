@@ -31,7 +31,8 @@ class operator_udp : public QThread
 private:
   robit_udp::udp_controller controller;
 
-  std::vector<ros::Publisher> img_pub;
+  std::vector<ros::Subscriber> sub_vec_;
+  std::vector<ros::Publisher> pub_vec_;
 
 Q_SIGNALS:
 

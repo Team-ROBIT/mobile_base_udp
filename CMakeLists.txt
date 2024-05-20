@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(operator_udp)
+project(mobile_base_udp)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 set(CMAKE_AUTOUIC ON)
@@ -19,14 +19,14 @@ find_package(catkin REQUIRED COMPONENTS
 
 include_directories(
   ${catkin_INCLUDE_DIRS}
-  include/operator_udp
+  include/mobile_base_udp
 )
 
 catkin_package()
 
 find_package(Qt5 COMPONENTS Widgets Gui Network REQUIRED)
 
-file(GLOB_RECURSE QT_MOC RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} FOLLOW_SYMLINKS include/operator_udp/*.h )
+file(GLOB_RECURSE QT_MOC RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} FOLLOW_SYMLINKS include/mobile_base_udp/*.h )
 
 QT5_WRAP_CPP(QT_MOC_HPP ${QT_MOC})
 
@@ -35,6 +35,6 @@ link_directories(${OpenCV_LIB_DIR})
 file(GLOB_RECURSE QT_SOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} FOLLOW_SYMLINKS src/*.cpp)
 
 
-add_executable(operator_udp ${QT_SOURCES}  ${QT_MOC_HPP})
-target_link_libraries(operator_udp Qt5::Widgets Qt5::Gui Qt5::Network ${QT_LIBRARIES} ${catkin_LIBRARIES})
+add_executable(mobile_base_udp ${QT_SOURCES}  ${QT_MOC_HPP})
+target_link_libraries(mobile_base_udp Qt5::Widgets Qt5::Gui Qt5::Network ${QT_LIBRARIES} ${catkin_LIBRARIES})
 

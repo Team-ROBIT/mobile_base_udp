@@ -5,7 +5,7 @@
               "~/catkin_ws/devel/include/**",
               "/opt/ros/noetic/include/**",
               "/usr/include/**",
-              "${workspaceFolder}/include/operator_udp",
+              "${workspaceFolder}/include/mobile_base_udp",
               "~/catkin_ws/src/robit_udp/include/**"
           ],
           "defines": [

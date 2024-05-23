@@ -13,13 +13,13 @@ image_send:
     topic_name: "usb_cam/image_raw"
     dst_name: "operator"
 
-STMtx_rcv:
+STMTX_rcv:
   STM_tx_data:
     data_num: 0
     topic_name: "STM_tx_data"
 
-STMrx_send:
+STMTX_send:
   STM_rx_data:
     data_num: 0
+    topic_name: "STM_rx_data"
     dst_name: "operator"
-    # topic_name: "STM_rx_data"

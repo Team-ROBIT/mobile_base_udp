@@ -55,11 +55,6 @@ operator_udp::~operator_udp()
 
 void operator_udp::run()
 {
-  ros::Rate rate(10);
-  while (ros::ok())
-  {
-    ros::spinOnce();
-    rate.sleep();
-  }
+  ros::spin();
   emit thread_end();
 }

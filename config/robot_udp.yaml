@@ -18,7 +18,7 @@ STMTX_rcv:
     data_num: 0
     topic_name: "STM_tx_data"
 
-STMTX_send:
+STMRX_send:
   STM_rx_data:
     data_num: 0
     topic_name: "STM_rx_data"

@@ -1,4 +1,4 @@
-##  DEPENDENCE
+##  DEPENDENCIES INSTALL
 
 ```bash
 $ cd {your_workspace}/src

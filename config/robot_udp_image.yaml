@@ -1,0 +1,26 @@
+ip:
+  this:
+    ip: "192.168.199.100"
+    port: 12346
+
+  operator:
+    ip: "192.168.199.253"
+    port: 12346
+
+image_send:
+  main_cam:
+    data_num: 100
+    topic_name: "/usb_cam/image_raw"
+    height: 480
+    width: 240
+    quality: 80
+    dst_name: "operator"
+
+  360_merge:
+    data_num: 99
+    topic_name: "/dual_fisheye_to_panorama/output"
+    height: 600
+    width: 300
+    quality: 80
+    dst_name: "operator"
+

@@ -1,5 +1,8 @@
 <launch>
-  <node pkg="mobile_base_udp" type="mobile_base_udp" name="operator_udp" output="screen">
-    <rosparam command="load" file="$(find mobile_base_udp)/config/operator_udp.yaml"/>
+  <node pkg="mobile_base_udp" type="mobile_base_udp" name="operator_udp_stm" output="screen">
+    <rosparam command="load" file="$(find mobile_base_udp)/config/operator_udp_stm.yaml"/>
+  </node>
+  <node pkg="mobile_base_udp" type="mobile_base_udp" name="operator_udp_image" output="screen">
+    <rosparam command="load" file="$(find mobile_base_udp)/config/operator_udp_image.yaml"/>
   </node>
 </launch>

@@ -1,4 +1,8 @@
 <launch>
-  <rosparam command="load" file="$(find mobile_base_udp)/config/robot_udp.yaml"/>
-  <node pkg="mobile_base_udp" type="mobile_base_udp" name="robot_udp" output="screen"/>
+  <node pkg="mobile_base_udp" type="mobile_base_udp" name="robot_udp_stm" output="screen">
+    <rosparam command="load" file="$(find mobile_base_udp)/config/robot_udp_stm.yaml"/>
+  </node>
+  <node pkg="mobile_base_udp" type="mobile_base_udp" name="robot_udp_image" output="screen">
+    <rosparam command="load" file="$(find mobile_base_udp)/config/robot_udp_image.yaml"/>
+  </node>
 </launch>

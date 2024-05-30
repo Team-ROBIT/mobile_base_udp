@@ -16,7 +16,7 @@
 
 #include <iostream>
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
   QApplication app(argc, argv);
   operator_udp udp(argc, argv);
@@ -28,7 +28,7 @@ int main(int argc, char* argv[])
   return 0;
 }
 
-operator_udp::operator_udp(int argc, char** argv) : controller(this)
+operator_udp::operator_udp(int argc, char **argv) : controller(this)
 {
   ros::init(argc, argv, "operator_udp");
   if (!ros::master::check())
@@ -36,7 +36,7 @@ operator_udp::operator_udp(int argc, char** argv) : controller(this)
     return;
   }
   ros::start();
-  ros::NodeHandle nh;
+  ros::NodeHandle nh("~");
   image_transport::ImageTransport it(nh);
 
   controller.load_param(nh, sub_vec_, pub_vec_);

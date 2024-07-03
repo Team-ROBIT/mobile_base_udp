@@ -1,0 +1,13 @@
+ip:
+  this:
+    ip: "192.168.199.100"
+    port: 12346
+
+  operator:
+    ip: "192.168.199.253"
+    port: 12346
+
+JOY_rcv:
+  manipulator_joy:
+    data_num: 0
+    topic_name: "/joy_manipulator"

@@ -1,8 +1,14 @@
 <launch>
   <node pkg="mobile_base_udp" type="mobile_base_udp" name="robot_udp_stm" output="screen">
-    <rosparam command="load" file="$(find mobile_base_udp)/config/robot_udp_stm.yaml"/>
+    <rosparam command="load" file="$(find mobile_base_udp)/config/robot/robot_udp_stm.yaml"/>
   </node>
   <node pkg="mobile_base_udp" type="mobile_base_udp" name="robot_udp_image" output="screen">
-    <rosparam command="load" file="$(find mobile_base_udp)/config/robot_udp_image.yaml"/>
+    <rosparam command="load" file="$(find mobile_base_udp)/config/robot/robot_udp_image.yaml"/>
+  </node>
+  <node pkg="mobile_base_udp" type="mobile_base_udp" name="robot_udp_image_mission" output="screen">
+    <rosparam command="load" file="$(find mobile_base_udp)/config/robot/robot_udp_image_mission.yaml"/>
+  </node>
+  <node pkg="mobile_base_udp" type="mobile_base_udp" name="robot_udp_manipulator" output="screen">
+    <rosparam command="load" file="$(find mobile_base_udp)/config/robot/robot_udp_manipulator.yaml"/>
   </node>
 </launch>

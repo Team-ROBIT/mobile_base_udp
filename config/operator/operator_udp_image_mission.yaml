@@ -1,0 +1,23 @@
+ip:
+  this:
+    ip: "192.168.199.253"
+    port: 12347
+
+  robot:
+    ip: "192.168.199.100"
+    port: 12347
+
+image_rcv:
+  victim_box:
+    data_num: 100
+    topic_name: "/victim_image"
+
+  thermal:
+    data_num: 99
+    topic_name: "/img_result_thermal"
+
+STRING_send:
+  victim_box_start:
+    data_num: 98
+    dst_name: "robot"
+    topic_name: "/victim_start"

@@ -1,0 +1,30 @@
+ip:
+  this:
+    ip: "192.168.199.100"
+    port: 12346
+
+  operator:
+    ip: "192.168.199.253"
+    port: 12346
+
+image_send:
+  victim_box:
+    data_num: 100
+    dst_name: "operator"
+    height: 240
+    width: 480
+    quality: 80
+    topic_name: "/victim_image"
+  
+  thermal:
+    data_num: 99
+    dst_name: "operator"
+    height: 240
+    width: 480
+    quality: 80
+    topic_name: "/img_result_thermal"
+
+STRING_rcv:
+  victim_box_start:
+    data_num: 98
+    topic_name: "/victim_start"

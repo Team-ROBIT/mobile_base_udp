@@ -1,0 +1,41 @@
+ip:
+  this:
+    ip: "192.168.199.100"
+    port: 12345
+
+  operator:
+    ip: "192.168.199.253"
+    port: 12345
+
+STMTX_rcv:
+  STM_tx_data:
+    data_num: 0
+    topic_name: "STM_tx_data"
+
+STMRX_send:
+  STM_rx_data:
+    data_num: 0
+    topic_name: "STM_rx_data"
+    dst_name: "operator"
+
+BOOLEAN_send:
+  comm_stat_robot:
+    data_num: 5
+    dst_name: "operator"
+    topic_name: "/comm_stat/robot"
+
+BOOLEAN_rcv:
+  comm_stat_operator:
+    data_num: 3
+    topic_name: "/comm_stat/operator"
+
+STRING_send:
+  robot_request:
+    data_num: 7
+    dst_name: "operator"
+    topic_name: "/udp_request/robot"
+
+STRING_rcv:
+  operator_request:
+    data_num: 6
+    topic_name: "/udp_request/operator"

@@ -1,0 +1,14 @@
+ip:
+  this:
+    ip: "192.168.199.253"
+    port: 9999
+
+  robot:
+    ip: "192.168.199.100"
+    port: 9999
+
+POINT_rcv:
+  map:
+    data_num: 0
+    topic_name: "/aft_pgo_map"
+    

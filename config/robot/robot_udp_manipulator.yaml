@@ -11,3 +11,9 @@ JOY_rcv:
   manipulator_joy:
     data_num: 0
     topic_name: "/joy_manipulator"
+
+FLOAT_ARR_send:
+  manipulator_angle:
+    data_num: 1
+    topic_name: "/mani_angle"
+    dst: "operator"

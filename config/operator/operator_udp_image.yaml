@@ -14,4 +14,4 @@ image_rcv:
   
   360_merge:
     data_num: 99
-    topic_name: "/insta360_image"
+    topic_name: "/dual_fisheye_to_panorama/output"

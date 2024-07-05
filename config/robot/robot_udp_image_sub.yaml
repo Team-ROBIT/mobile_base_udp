@@ -1,0 +1,33 @@
+ip:
+  this:
+    ip: "192.168.199.100"
+    port: 12340
+
+  operator:
+    ip: "192.168.199.253"
+    port: 12340
+
+image_send:
+  image1:
+    data_num: 101
+    topic_name: "/cam_image/front"
+    height: 240
+    width: 480
+    quality: 80
+    dst_name: "operator"
+
+  image2:
+    data_num: 100
+    topic_name: "/cam_image/left"
+    height: 240
+    width: 480
+    quality: 80
+    dst_name: "operator"
+  
+  image3:
+    data_num: 99
+    topic_name: "/cam_image/right"
+    height: 240
+    width: 480
+    quality: 80
+    dst_name: "operator"

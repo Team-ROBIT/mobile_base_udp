@@ -11,4 +11,7 @@
   <node pkg="mobile_base_udp" type="mobile_base_udp" name="operator_udp_manipulator" output="screen">
     <rosparam command="load" file="$(find mobile_base_udp)/config/operator/operator_udp_manipulator.yaml"/>
   </node>
+  <node pkg="mobile_base_udp" type="mobile_base_udp" name="operator_udp_camera" output="screen">
+    <rosparam command="load" file="$(find mobile_base_udp)/config/operator/operator_udp_image_sub.yaml"/>
+  </node>
 </launch>

@@ -8,9 +8,13 @@ ip:
     port: 12346
 
 image_rcv:
-  main_cam:
+  split_image1:
+    data_num: 101
+    topic_name: "/split_image/output/vertical00/horizontal01"
+
+  split_image2:
     data_num: 100
-    topic_name: "/usb_cam/c920"
+    topic_name: "/split_image/output/vertical00/horizontal00"
   
   360_merge:
     data_num: 99

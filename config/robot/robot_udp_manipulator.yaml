@@ -16,7 +16,7 @@ FLOAT_ARR_send:
   manipulator_angle:
     data_num: 1
     topic_name: "/mani_angle"
-    dst: "operator"
+    dst_name: "operator"
 
 INT_rcv:
   manipulator_mission_start:
@@ -27,7 +27,7 @@ INT_send:
   manipulator_mission_end:
     data_num: 3
     topic_name: "/dex_joy_mode"
-    dst: "operator"
+    dst_name: "operator"
 
 STRING_rcv:
   victim_box_start:
@@ -38,4 +38,4 @@ STRING_send:
   victim_box_end:
     data_num: 5
     topic_name: "/victim_end"
-    dst: "operator"
+    dst_name: "operator"

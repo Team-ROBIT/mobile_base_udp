@@ -22,7 +22,7 @@ INT_send:
   manipulator_mission_start:
     data_num: 2
     topic_name: "/dex_mode"
-    dst: "robot"
+    dst_name: "robot"
 
 INT_rcv:
   manipulator_mission_end:
@@ -33,7 +33,7 @@ STRING_send:
   victim_box_start:
     data_num: 4
     topic_name: "/victim_start"
-    dst: "robot"
+    dst_name: "robot"
 
 STRING_rcv: 
   victim_box_end:

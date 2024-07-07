@@ -10,7 +10,7 @@ ip:
 image_send:
   image1:
     data_num: 101
-    topic_name: "/cam_image/front"
+    topic_name: "/front/usb_cam/image_raw"
     height: 240
     width: 480
     quality: 80
@@ -18,7 +18,7 @@ image_send:
 
   image2:
     data_num: 100
-    topic_name: "/cam_image/left"
+    topic_name: "/left/usb_cam/image_raw"
     height: 240
     width: 480
     quality: 80
@@ -26,7 +26,7 @@ image_send:
   
   image3:
     data_num: 99
-    topic_name: "/cam_image/right"
+    topic_name: "/right/usb_cam/image_raw"
     height: 240
     width: 480
     quality: 80

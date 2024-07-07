@@ -1,11 +1,11 @@
 ip:
   this:
     ip: "192.168.199.253"
-    port: 12349
+    port: 12884
 
   robot:
     ip: "192.168.199.100"
-    port: 12349
+    port: 12884
 
 JOY_send:
   manipulator_joy:

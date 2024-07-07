@@ -10,5 +10,5 @@ ip:
 POINT_rcv:
   map:
     data_num: 0
-    topic_name: "/aft_pgo_map"
+    topic_name: "/map_udp"
     

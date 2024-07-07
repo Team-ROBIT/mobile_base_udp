@@ -26,7 +26,7 @@ image_send:
   
   360_merge:
     data_num: 99
-    topic_name: "/dual_fisheye_to_panorama/output/compressed"
+    topic_name: "/dual_fisheye_to_panorama/output"
     height: 300
     width: 600
     quality: 80

@@ -11,12 +11,12 @@ STMTX_send:
   STM_tx_data:
     data_num: 0
     dst_name: "robot"
-    topic_name: "/STM_tx_data"
+    topic_name: "STM_tx_data"
 
 STMRX_rcv:
   STM_rx_data:
     data_num: 1
-    topic_name: "/STM_rx_data"
+    topic_name: "STM_rx_data"
 
 BOOLEAN_send:
   comm_stat_oper:

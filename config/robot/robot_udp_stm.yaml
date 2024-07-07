@@ -10,12 +10,12 @@ ip:
 STMTX_rcv:
   STM_tx_data:
     data_num: 0
-    topic_name: "STM_tx_data"
+    topic_name: "/STM_tx_data"
 
 STMRX_send:
   STM_rx_data:
-    data_num: 1
-    topic_name: "STM_rx_data"
+    data_num: 0
+    topic_name: "/STM_rx_data"
     dst_name: "operator"
 
 BOOLEAN_send:

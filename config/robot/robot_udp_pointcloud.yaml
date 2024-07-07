@@ -11,4 +11,4 @@ POINT_send:
   map:
     data_num: 0
     topic_name: "/aft_pgo_map"
-    dst: "operator"
+    dst_name: "operator"

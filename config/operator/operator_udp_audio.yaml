@@ -1,0 +1,13 @@
+ip:
+  this:
+    ip: "192.168.199.253"
+    port: 12221
+
+  robot:
+    ip: "192.168.199.100"
+    port: 12221
+
+AUDIO_rcv:
+  audio:
+    data_num: 0
+    topic_name: "/audio/audio"

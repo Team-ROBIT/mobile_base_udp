@@ -17,4 +17,7 @@
   <node pkg="mobile_base_udp" type="mobile_base_udp" name="operator_udp_map" output="screen">
     <rosparam command="load" file="$(find mobile_base_udp)/config/operator/operator_udp_pointcloud.yaml"/>
   </node>
+  <node pkg="mobile_base_udp" type="mobile_base_udp" name="operator_udp_audio" output="screen">
+    <rosparam command="load" file="$(find mobile_base_udp)/config/operator/operator_udp_audio.yaml"/>
+  </node>
 </launch>

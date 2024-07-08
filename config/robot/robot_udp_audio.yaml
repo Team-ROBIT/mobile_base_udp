@@ -1,0 +1,15 @@
+ip:
+  this:
+    ip: "192.168.199.100"
+    port: 12221
+
+  operator:
+    ip: "192.168.199.253"
+    port: 12221
+
+AUDIO_send:
+  audio:
+    data_num: 0
+    topic_name: "/audio/audio"
+    dst_name: "operator"
+
